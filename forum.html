@@ -58,7 +58,14 @@ https://templatemo.com/tm-579-cyborg-gaming
               <li><a href="forum.html" class="active">Forum</a></li>
               <li><a href="vagas.html">Vagas</a></li>
               <li><a href="inbox.html">Conversas</a></li>
-              <li><a href="profile.html">Perfil <img src="assets/images/profile-header.jpg" alt=""></a></li>
+              <li class="profile-dropdown">
+                <a href="profile.html" id="profile">Perfil <img src="assets/images/profile-header.jpg" alt=""></a>
+                <!-- Submenu começa aqui -->
+                <ul class="submenu">
+                    <li><a href="index.html">Sair</a></li>
+                </ul>
+                <!-- Submenu termina aqui -->
+            </li>
             </ul>
             <a class='menu-trigger'>
               <span>Menu</span>
@@ -74,7 +81,7 @@ https://templatemo.com/tm-579-cyborg-gaming
   <div class="content-forum">
     <div class="row">
       <!-- Seção de Publicação -->
-      <div class="col-md-4">
+      <div class="col-md-4 postagens">
         <div class="create-post">
           <h2>Publicar no Fórum</h2>
           <textarea id="newPost" rows="5" placeholder="Escreva sua postagem aqui..."></textarea>
@@ -129,7 +136,7 @@ https://templatemo.com/tm-579-cyborg-gaming
         </div>
       </div>
       <!-- Seção de perfil -->
-      <div class="col-md-3">
+      <div class="col-md-3 profile-section">
         <div class="profile">
           <img src="../Artemis/assets/images/profile.jpg" alt="Foto de perfil">
           <h2 id="profileName"></h2>

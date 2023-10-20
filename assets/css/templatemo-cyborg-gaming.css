@@ -192,13 +192,13 @@ Global Styles
 */
 html,
 body {
-  background: #04041b;
+  background: #31466d ;
   font-family: 'Poppins', sans-serif;
 }
 
 body .page-content {
   margin-top: 110px;
-  background-color: #04041b;
+  background-color: #31466d;
   padding: 60px;
   border-radius: 23px;
 }
@@ -419,13 +419,15 @@ Header Style
 }
 
 .header-area {
-  background-color: transparent;
+  background-color: #cad5e5;
   position: absolute;
-  height: 70px;
-  top: 15px;
+  height: 88px;
+  top: 0px;
   left: 0;
   right: 0;
   z-index: 100;
+  border-bottom-right-radius: 5px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.8);
   -webkit-transition: all .5s ease 0s;
   -moz-transition: all .5s ease 0s;
   -o-transition: all .5s ease 0s;
@@ -450,11 +452,12 @@ Header Style
 }
 
 .header-area .main-nav #search input {
-  background-color: #04041b;
+  background-color: transparent;
   height: 46px;
   border-radius: 23px;
   border: none;
-  color: #cad5e5;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+  color: #000;
   font-size: 14px;
   padding: 0px 15px 0px 45px;
 }
@@ -481,6 +484,7 @@ Header Style
 
 .header-area .main-nav .logo img {
   width: 121px;
+  margin-top: -20px;
 }
 
 .background-header .main-nav .logo {
@@ -518,7 +522,7 @@ Header Style
   font-weight: 400;
   font-size: 14px;
   text-transform: capitalize;
-  color: #cad5e5;
+  color: #04041b;
   -webkit-transition: all 0.3s ease 0s;
   -moz-transition: all 0.3s ease 0s;
   -o-transition: all 0.3s ease 0s;
@@ -530,7 +534,7 @@ Header Style
 }
 
 .header-area .main-nav .nav li:last-child a {
-  background-color: #04041b;
+  background-color: #cad5e5;
   padding: 8px 10px 8px 20px;
   border-radius: 23px;
 }
@@ -548,13 +552,15 @@ Header Style
 
 .header-area .main-nav .nav li:hover a,
 .header-area .main-nav .nav li a.active {
-  color: #31466d !important;
+  color: #04041b !important;
+  font-weight: 700;
 }
 
 .header-area .main-nav .nav li:last-child:hover a,
 .header-area .main-nav .nav li:last-child a.active {
-  color: #fff !important;
-  background-color: #31466d !important;
+  font-weight: 700;
+  color: #04041b !important;
+  background-color: #cad5e5 !important;
 }
 
 .background-header .main-nav .nav li:hover a,
@@ -718,7 +724,7 @@ Header Style
   }
 
   .header-area .main-nav .logo {
-    position: absolute;
+    position: flex;
     left: 30px;
     top: 15px;
   }
@@ -754,6 +760,7 @@ Header Style
     box-shadow: none;
     text-align: center;
   }
+
 
   .header-area .container {
     padding: 0px;
@@ -894,7 +901,7 @@ Banner Style
 
 .main-banner h4 em {
   font-style: normal;
-  color: #565D72;
+  color: #04041b;
 }
 
 /* 
@@ -1626,13 +1633,18 @@ Profile Style
 --------------------------------------------- 
 #04041b (azul marinho) #565d72(cinza escuro) #31466d (azul inverno) #cad5e5 (azul prateado)
 */
+.profile-dropdown li{
+  background-color: #cad5e5;
+}
 .profile-dropdown .submenu {
   display: none;
   position: flex;
   top: 100%;
   left: 0;
-  background-color: #04041b;
-  border: 1px solid #ccc;
+  background-color: #cad5e5;
+  border-radius: 23px;
+  border: 0px solid #000;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.4);
   list-style-type: none;
   padding: 0;
   z-index: 10;
@@ -1642,12 +1654,12 @@ Profile Style
 .profile-dropdown .submenu li a {
   padding: 10px 15px;
   display: block;
-  color: #333;
+  color: #04041b;
   text-decoration: none;
 }
 
 .profile-dropdown .submenu li a:hover {
-  background-color: #eee;
+  background-color: transparent;
 }
 
 /* Mostra o submenu quando o mouse passa sobre .profile-dropdown */
@@ -1658,7 +1670,7 @@ Profile Style
 .main-profile {
   border-radius: 23px;
   padding: 30px;
-  background-color: #1f2122;
+  background-color: #cad5e5;
 }
 
 .main-info.header-text {
@@ -1740,7 +1752,7 @@ main-info hea .main-profile .main-info span {
 .main-profile ul {
   border-radius: 23px;
   padding: 30px;
-  background-color: #27292a;
+  background-color: #cad5e5;
 }
 
 .main-profile ul li {
@@ -1948,7 +1960,7 @@ body {
 /*----------------------------------------------------------------------------------------------*/
 
 .content-forum {
-  background-color: #31466d;
+  background-color: #cad5e5;
   display: flex;
   align-items: baseline;
   justify-content: center;
@@ -2026,8 +2038,7 @@ body {
 .post-content {
   background-color: #31466d;
   padding: 1em;
-  border-radius: 10px;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.6);
+  
   width: 100%;
 }
 
@@ -2169,7 +2180,7 @@ textarea:focus {
 }
 
 
-/*========================================= TROCA vagas =============================================*/
+/*========================================= Forum =============================================*/
 .most-talked-categories {
   background-color: #31466d;
   padding: 20px;
@@ -2196,4 +2207,80 @@ textarea:focus {
 .most-talked-categories ul li span {
   font-size: 0.9em;
   color: #777;
+}
+
+
+/*================================== VAGAS ================================================*/
+.job-offer {
+  border: 1px solid #000;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.8);
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  background-color: transparent;
+}
+
+.apply-btn {
+  padding: 9px 20px;
+  background-color: #31466d;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.apply-btn:hover {
+  background-color: #cad5e5;
+  color: #000;
+}
+
+.centered-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100vh; /* Altura total da viewport */
+}
+
+.vagas-categories {
+  list-style: none;
+  padding: 20px;
+  border: 1px solid #000;
+  background-color: #04041b !important;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.8);
+  margin-bottom: 20px;
+  background-color: transparent;
+  border-radius: 5px;
+}
+
+.vagas-categories h3 {
+  color: #cad5e5;
+  margin-bottom: 15px;
+  font-weight: bold;
+}
+
+.vagas-categories ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.vagas-categories li {
+  margin-bottom: 10px;
+}
+
+.vagas-categories li a {
+  color: #cad5e5;
+  text-decoration: none;
+  transition: color 0.3s; /* Suaviza a mudança de cor */
+}
+
+.vagas-categories li a:hover {
+  color: white; /* Altera a cor quando o mouse passa por cima */
+  text-decoration: underline;
+}
+
+.container-vagas{
+  background-color: #cad5e5;
 }
