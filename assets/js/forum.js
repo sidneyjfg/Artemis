@@ -10,3 +10,13 @@ window.onload = function () {
       // Faça algo se o nome do usuário não estiver disponível, por exemplo, redirecione para a página de login
     }
   };
+
+  document.addEventListener('DOMContentLoaded', function() {
+    const contactButtons = document.querySelectorAll('.contact-btn');
+
+    contactButtons.forEach(button => {
+        button.addEventListener('click', function() {
+            window.location.href = '../Artemis/inbox.html';  // Atualize com o caminho correto para a sua página de conversas
+        });
+    });
+});

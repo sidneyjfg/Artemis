@@ -1555,7 +1555,7 @@ Top Streamers Style
 --------------------------------------------- 
 */
 
-.top-streamers {
+.recents {
   border-radius: 23px;
   background-color: #1f2122;
   padding: 30px;
@@ -1563,21 +1563,27 @@ Top Streamers Style
   min-height: 567px;
 }
 
-.top-streamers ul li {
-  display: inline-block;
-  width: 100%;
-  border-bottom: 1px solid #353637;
-  margin-bottom: 25px;
-  padding-bottom: 25px;
+.recents ul li {
+  border: 1px solid #ccc;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin: 10px 0;
+  padding: 10px;
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+  cursor: pointer;
 }
 
-.top-streamers ul li:last-child {
+.recents ul li:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transform: translateY(-2px);
+}
+
+.recents ul li:last-child {
   border-bottom: none;
   padding-bottom: 0px;
   margin-bottom: 0px;
 }
 
-.top-streamers ul li span {
+.recents ul li span {
   float: left;
   font-size: 15px;
   color: #fff;
@@ -1586,14 +1592,14 @@ Top Streamers Style
   margin-right: 10px;
 }
 
-.top-streamers ul li h6 {
+.recents ul li h6 {
   display: inline;
   font-size: 14px;
   color: #565D72;
   font-weight: 400;
 }
 
-.top-streamers ul li h6 i {
+.recents ul li h6 i {
   color: #fff;
   background-color: #565D72;
   border-radius: 50%;
@@ -1606,11 +1612,11 @@ Top Streamers Style
   margin-right: 3px;
 }
 
-.top-streamers ul li .main-button {
+.recents ul li .main-button {
   float: right;
 }
 
-.top-streamers ul li .main-button a {
+.recents ul li .main-button a {
   padding: 8px 20px;
 }
 
@@ -1664,23 +1670,26 @@ Profile Style
 .main-info.header-text textarea {
   border: 1px solid #ccc;
   padding: 5px;
-  resize: vertical;   
+  resize: vertical;
   font-family: inherit;
-  font-size: inherit; 
+  font-size: inherit;
 }
-.edit-btn, .cancel-btn {
+
+.edit-btn,
+.cancel-btn {
   margin: 5px;
   padding: 5px 15px;
   border: none;
   border-radius: 5px;
-  background-color: #333;  
+  background-color: #333;
   color: #fff;
   cursor: pointer;
 }
 
 .cancel-btn {
-  background-color: #f44336;  
+  background-color: #f44336;
 }
+
 .edit-btn {
   position: relative;
   /* Permite que o botão seja posicionado em relação ao seu elemento pai mais próximo com posicionamento relativo */
@@ -1707,9 +1716,7 @@ Profile Style
   /* Muda a cor de fundo do botão quando o mouse está sobre ele */
 }
 
-main-info hea
-
-.main-profile .main-info span {
+main-info hea .main-profile .main-info span {
   font-size: 14px;
   color: #fff;
   background-color: #cad5e5;
@@ -1862,17 +1869,17 @@ body {
     font-size: 14px;
   }
 
-  .top-streamers ul li .main-button {
+  .recents ul li .main-button {
     float: none;
     margin-top: 10px;
   }
 
-  .top-streamers ul li .main-button a {
+  .recents ul li .main-button a {
     width: 100%;
     text-align: center;
   }
 
-  .top-streamers,
+  .recents,
   .top-downloaded {
     max-height: 100%;
     min-height: 100%;
@@ -2077,4 +2084,116 @@ body {
 .contact-btn:hover {
   background-color: #cad5e5;
   color: #000;
+}
+
+
+
+
+/*============================== CHAT CONVERSAS ==================================*/
+.chat-container {
+  border: 1px solid #000;
+  min-height: 650px;
+  width: 730px;
+  border-radius: 5px;
+  padding: 50px 5px;
+  background-color: transparent;
+  position: relative;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.8);
+}
+
+.message-list {
+  color: #fff;
+  min-height: 400px;
+  max-width: 500px;
+  overflow-y: auto;
+  margin-bottom: 60px;
+}
+
+.input-area {
+  position: absolute;
+  bottom: 10px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 15px;
+  /* adicionado para alinhar o textarea e o botão */
+}
+
+textarea {
+  width: 100%;
+  padding: 20px;
+  border: 1px solid #e0e0e0;
+  border-radius: 5px;
+  resize: none;
+  transition: border-color 0.3s;
+  font-size: 16px;
+}
+
+textarea:focus {
+  border-color: #31466d;
+  outline: none;
+  box-shadow: 0px 0px 5px rgba(52, 152, 219, 0.3);
+}
+
+.send {
+  padding: 9px 35px;
+  border: none;
+  background-color: #31466d;
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  align-self: center;
+  /* adicionado para alinhar verticalmente o botão no centro */
+}
+
+.send:hover {
+  background-color: #2980b9;
+}
+
+.message {
+  padding: 5px 10px;
+  margin: 5px 0;
+  border-radius: 5px;
+  width: fit-content;
+}
+
+.sender {
+  background-color: #e0e0e0;
+  margin-left: auto;
+}
+
+.receiver {
+  background-color: #2196f3;
+  color: white;
+}
+
+
+/*========================================= TROCA HABILIDADES =============================================*/
+.most-talked-categories {
+  background-color: #31466d;
+  padding: 20px;
+  margin-right: 10px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.8);
+}
+
+.most-talked-categories ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.most-talked-categories ul li {
+  margin-bottom: 10px;
+}
+
+.most-talked-categories ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+}
+
+.most-talked-categories ul li span {
+  font-size: 0.9em;
+  color: #777;
 }

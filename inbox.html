@@ -55,7 +55,7 @@ https://templatemo.com/tm-579-cyborg-gaming
             <ul class="nav">
               <li><a href="home.html">Home</a></li>
               <li><a href="forum.html">Forum</a></li>
-              <li><a href="categorias.html">Categorias</a></li>
+              <li><a href="habilidades.html">habilidades</a></li>
               <li><a href="inbox.html" class="active">Conversas</a></li>
               <li><a href="profile.html">Perfil <img src="assets/images/profile-header.jpg" alt=""></a></li>
             </ul>
@@ -80,61 +80,62 @@ https://templatemo.com/tm-579-cyborg-gaming
             <div class="col-lg-8">
               <div class="featured-games header-text">
                 <div class="heading-section">
-                  <h4><em>Live</em> Streams</h4>
+                  <h4><em>Caixa</em> de Mensagens</h4>
+                  <!-- Container para as mensagens da conversa -->
+                  <div class="chat-container">
+                    <div class="message-list">
+                      <!-- As mensagens da conversa serão inseridas aqui -->
+                    </div>
+                    <!-- Área para digitar uma nova mensagem -->
+                    <div class="input-area">
+                      <textarea placeholder="Digite sua mensagem..."></textarea>
+                      <button class="send">Enviar</button>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
 
             <div class="col-lg-4">
-              <div class="top-streamers">
+              <div class="recents">
                 <div class="heading-section">
-                  <h4><em>Conversas</em> Recentes</h4>
+                  <h4>Conversas</h4>
                 </div>
                 <ul>
-                  <li>
+                  <li data-conversation-id="1">
                     <span>01</span>
-                    <img src="assets/images/avatar-01.jpg" alt=""
+                    <img src="https://placeimg.com/50/50/people?1" alt=""
                       style="max-width: 46px; border-radius: 50%; margin-right: 15px;">
-                    <h6><i class="fa fa-check"></i> LahutaM</h6>
-                    <div class="main-button">
-                      <a href="#">Follow</a>
-                    </div>
+                    <h6><i class="fa fa-check"></i> AlexS</h6>
+                    <p>Olá, tudo bem?</p>
                   </li>
-                  <li>
+                  <li data-conversation-id="2">
                     <span>02</span>
-                    <img src="assets/images/avatar-02.jpg" alt=""
+                    <img src="https://placeimg.com/50/50/people?2" alt=""
                       style="max-width: 46px; border-radius: 50%; margin-right: 15px;">
-                    <h6><i class="fa fa-check"></i> Kengan</h6>
-                    <div class="main-button">
-                      <a href="#">Follow</a>
-                    </div>
+                    <h6><i class="fa fa-check"></i> MariaP</h6>
+                    <p>Precisamos conversar sobre o projeto.</p>
                   </li>
-                  <li>
+                  <li data-conversation-id="3">
                     <span>03</span>
-                    <img src="assets/images/avatar-03.jpg" alt=""
+                    <img src="https://placeimg.com/50/50/people?3" alt=""
                       style="max-width: 46px; border-radius: 50%; margin-right: 15px;">
-                    <h6><i class="fa fa-check"></i> Areluwa</h6>
-                    <div class="main-button">
-                      <a href="#">Follow</a>
-                    </div>
+                    <h6><i class="fa fa-check"></i> LucasR</h6>
+                    <p>Você viu minha última mensagem?</p>
                   </li>
-                  <li>
+                  <li data-conversation-id="4">
                     <span>04</span>
-                    <img src="assets/images/avatar-04.jpg" alt=""
+                    <img src="https://placeimg.com/50/50/people?4" alt=""
                       style="max-width: 46px; border-radius: 50%; margin-right: 15px;">
-                    <h6><i class="fa fa-check"></i> Omeg</h6>
-                    <div class="main-button">
-                      <a href="#">Follow</a>
-                    </div>
+                    <h6><i class="fa fa-check"></i> JuliaO</h6>
+                    <p>Quando podemos nos encontrar?</p>
                   </li>
-                  <li>
+                  <li data-conversation-id="5">
                     <span>05</span>
-                    <img src="assets/images/avatar-01.jpg" alt=""
+                    <img src="https://placeimg.com/50/50/people?5" alt=""
                       style="max-width: 46px; border-radius: 50%; margin-right: 15px;">
-                    <h6><i class="fa fa-check"></i> GangTeam</h6>
-                    <div class="main-button">
-                      <a href="#">Follow</a>
-                    </div>
+                    <h6><i class="fa fa-check"></i> PedroV</h6>
+                    <p>Te enviei o arquivo!</p>
                   </li>
                 </ul>
               </div>
@@ -160,6 +161,7 @@ https://templatemo.com/tm-579-cyborg-gaming
 
 
   <!-- Scripts -->
+  <script src="assets/js/inbox.js"></script>
   <!-- Bootstrap core JavaScript -->
   <script src="vendor/jquery/jquery.min.js"></script>
   <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
