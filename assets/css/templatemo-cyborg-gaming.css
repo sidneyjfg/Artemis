@@ -1620,12 +1620,94 @@ Profile Style
 --------------------------------------------- 
 #04041b (azul marinho) #565d72(cinza escuro) #31466d (azul inverno) #cad5e5 (azul prateado)
 */
+.profile-dropdown .submenu {
+  display: none;
+  position: flex;
+  top: 100%;
+  left: 0;
+  background-color: #04041b;
+  border: 1px solid #ccc;
+  list-style-type: none;
+  padding: 0;
+  z-index: 10;
+  /* garantir que apareça acima de outros elementos */
+}
+
+.profile-dropdown .submenu li a {
+  padding: 10px 15px;
+  display: block;
+  color: #333;
+  text-decoration: none;
+}
+
+.profile-dropdown .submenu li a:hover {
+  background-color: #eee;
+}
+
+/* Mostra o submenu quando o mouse passa sobre .profile-dropdown */
+.profile-dropdown:hover .submenu {
+  display: block;
+}
 
 .main-profile {
   border-radius: 23px;
   padding: 30px;
   background-color: #1f2122;
 }
+
+.main-info.header-text {
+  position: relative;
+  height: 400px;
+  /* Estabelece um ponto de referência para posicionamento absoluto dos elementos filhos */
+}
+
+.main-info.header-text textarea {
+  border: 1px solid #ccc;
+  padding: 5px;
+  resize: vertical;   
+  font-family: inherit;
+  font-size: inherit; 
+}
+.edit-btn, .cancel-btn {
+  margin: 5px;
+  padding: 5px 15px;
+  border: none;
+  border-radius: 5px;
+  background-color: #333;  
+  color: #fff;
+  cursor: pointer;
+}
+
+.cancel-btn {
+  background-color: #f44336;  
+}
+.edit-btn {
+  position: relative;
+  /* Permite que o botão seja posicionado em relação ao seu elemento pai mais próximo com posicionamento relativo */
+  bottom: 0px;
+  /* Distância de 10px do fundo da div .main-info */
+  right: 10px;
+  /* Distância de 10px do lado direito da div .main-info */
+  background-color: #333;
+  /* Cor de fundo do botão, pode ser ajustada conforme necessário */
+  color: #fff;
+  /* Cor do texto do botão */
+  border: none;
+  /* Remove a borda padrão */
+  padding: 5px 15px;
+  /* Adiciona algum preenchimento ao botão */
+  border-radius: 5px;
+  /* Adiciona cantos arredondados ao botão */
+  cursor: pointer;
+  /* Muda o cursor para um ponteiro quando o mouse está sobre o botão */
+}
+
+.edit-btn:hover {
+  background-color: #555;
+  /* Muda a cor de fundo do botão quando o mouse está sobre ele */
+}
+
+main-info hea
 
 .main-profile .main-info span {
   font-size: 14px;
@@ -1901,6 +1983,11 @@ body {
 
 #newPost {
   width: 100%;
+  padding: 10px;
+  background-color: transparent;
+  border-style: none;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.6);
   /* ou um valor fixo, como 500px */
   height: 200px;
 }
