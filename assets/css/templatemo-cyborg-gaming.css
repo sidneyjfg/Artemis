@@ -228,7 +228,7 @@ p {
 .main-button a {
   font-size: 14px;
   color: #fff;
-  background-color: #31466d;
+  background-color: #04041b;
   padding: 12px 30px;
   display: inline-block;
   border-radius: 25px;
@@ -1693,7 +1693,7 @@ Profile Style
   padding: 5px 15px;
   border: none;
   border-radius: 5px;
-  background-color: #333;
+  background-color: #04041b;
   color: #fff;
   cursor: pointer;
 }
@@ -1709,7 +1709,7 @@ Profile Style
   /* Distância de 10px do fundo da div .main-info */
   right: 10px;
   /* Distância de 10px do lado direito da div .main-info */
-  background-color: #333;
+  background-color: #04041b;
   /* Cor de fundo do botão, pode ser ajustada conforme necessário */
   color: #fff;
   /* Cor do texto do botão */
@@ -1743,16 +1743,21 @@ main-info hea .main-profile .main-info span {
 
 .main-profile .main-info h4 {
   margin-bottom: 20px;
+  color: #04041b;
 }
 
 .main-profile .main-info .main-border-button {
   margin-top: 25px;
 }
-
+.online{
+  color: greenyellow;
+}
 .main-profile ul {
   border-radius: 23px;
   padding: 30px;
   background-color: #cad5e5;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.4);
 }
 
 .main-profile ul li {
@@ -2139,7 +2144,9 @@ textarea {
   transition: border-color 0.3s;
   font-size: 16px;
 }
-
+.desc{
+  color: #04041b;
+}
 textarea:focus {
   border-color: #31466d;
   outline: none;
