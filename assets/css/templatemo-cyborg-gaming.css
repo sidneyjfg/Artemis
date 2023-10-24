@@ -889,18 +889,24 @@ Banner Style
 .main-banner h6 {
   font-size: 20px;
   color: #fff;
-  font-weight: 400;
+  font-weight: 300;
   margin-bottom: 25px;
 }
 
 .main-banner h4 {
-  font-size: 45px;
+  font-size: 35px;
   text-transform: uppercase;
   margin-bottom: 25px;
 }
 
 .main-banner h4 em {
   font-style: normal;
+  color: #04041b;
+}
+
+.main-banner h6 em {
+  font-style: normal;
+  font-weight: 500;
   color: #04041b;
 }
 
@@ -2551,4 +2557,69 @@ textarea:focus {
 
 .professional button:hover {
   background-color: #31466d;
+}
+
+/*========================================== STARS ================================================*/
+body,
+html {
+  height: 100%;
+  margin: 0;
+
+}
+
+.stars {
+  position: fixed;
+  /* fixo na tela */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  /* coloca atrás do conteúdo principal */
+}
+
+.star {
+  position: absolute;
+  width: 2px;
+  height: 2px;
+  background-color: white;
+  border-radius: 50%;
+  animation: twinkle 1s infinite alternate;
+}
+
+@keyframes twinkle {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0.4;
+  }
+}
+
+
+/*========================================== BARRA DE ROLAGEM ================================================*/
+/* Estilos gerais para todas as barras de rolagem */
+::-webkit-scrollbar {
+  width: 10px;
+  /* largura para barras de rolagem verticais */
+  height: 10px;
+  /* altura para barras de rolagem horizontais */
+}
+
+/* Fundo da barra de rolagem (será visível quando a barra estiver escondida por causa da propriedade 'autohide') */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 10px;
+}
+
+/* Handle (pegador) da barra de rolagem */
+::-webkit-scrollbar-thumb {
+  background: #04041b;
+  border-radius: 10px;
+}
+
+/* Handle da barra de rolagem ao passar o mouse */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
 }
