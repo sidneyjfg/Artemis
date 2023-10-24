@@ -82,3 +82,27 @@ window.onload = function () {
       });
   }
 });
+
+document.addEventListener("DOMContentLoaded", function() {
+    var modal = document.getElementById("premiumModal");
+    var closeBtn = document.querySelector(".close-modal");
+
+    // Função para mostrar a modal
+    function openModal() {
+        modal.style.display = "block";
+    }
+
+    // Função para fechar a modal
+    function closeModal() {
+        modal.style.display = "none";
+    }
+
+    closeBtn.addEventListener("click", closeModal);
+
+    // Quando o usuário clicar fora da modal, ela se fecha
+    window.addEventListener("click", function(event) {
+        if (event.target === modal) {
+            closeModal();
+        }
+    });
+});
