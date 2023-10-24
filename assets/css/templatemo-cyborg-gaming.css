@@ -192,7 +192,7 @@ Global Styles
 */
 html,
 body {
-  background: #31466d ;
+  background: #31466d !important;
   font-family: 'Poppins', sans-serif;
 }
 
@@ -1633,9 +1633,10 @@ Profile Style
 --------------------------------------------- 
 #04041b (azul marinho) #565d72(cinza escuro) #31466d (azul inverno) #cad5e5 (azul prateado)
 */
-.profile-dropdown li{
+.profile-dropdown li {
   background-color: #cad5e5;
 }
+
 .profile-dropdown .submenu {
   display: none;
   position: flex;
@@ -1749,9 +1750,11 @@ main-info hea .main-profile .main-info span {
 .main-profile .main-info .main-border-button {
   margin-top: 25px;
 }
-.online{
+
+.online {
   color: greenyellow;
 }
+
 .main-profile ul {
   border-radius: 23px;
   padding: 30px;
@@ -1977,14 +1980,18 @@ body {
   border-radius: 25px;
 }
 
+.create-post h2 {
+  color: #000;
+}
+
 .create-post {
   margin-bottom: 20px;
   margin-left: 20px;
   width: 500px;
-  background-color: #31466d;
+  background-color: #cad5e5;
   padding: 20px;
   border-radius: 10px;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.6);
+
 }
 
 .publications {
@@ -2043,7 +2050,7 @@ body {
 .post-content {
   background-color: #31466d;
   padding: 1em;
-  
+
   width: 100%;
 }
 
@@ -2144,9 +2151,11 @@ textarea {
   transition: border-color 0.3s;
   font-size: 16px;
 }
-.desc{
+
+.desc {
   color: #04041b;
 }
+
 textarea:focus {
   border-color: #31466d;
   outline: none;
@@ -2218,6 +2227,18 @@ textarea:focus {
 
 
 /*================================== VAGAS ================================================*/
+.page-content-jobs {
+  margin-top: 110px;
+  padding: 60px;
+  border-radius: 23px;
+  background-color: #cad5e5;
+}
+
+.page-content-jobs h2 {
+  color: #000;
+  padding-bottom: 15px;
+}
+
 .job-offer {
   border: 1px solid #000;
   border-radius: 10px;
@@ -2225,13 +2246,13 @@ textarea:focus {
   padding: 20px;
   margin-bottom: 20px;
   border-radius: 5px;
-  background-color: transparent;
+  background-color: #31466d;
 }
 
 .apply-btn {
   padding: 9px 20px;
-  background-color: #31466d;
-  color: #fff;
+  background-color: #cad5e5;
+  color: #000;
   border: none;
   border-radius: 5px;
   cursor: pointer;
@@ -2247,7 +2268,15 @@ textarea:focus {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  height: 100vh; /* Altura total da viewport */
+  height: 100vh;
+  /* Altura total da viewport */
+}
+
+.category-active {
+  background-color: #3498db;
+  /* Uma cor azul como exemplo. */
+  color: white;
+  /* Texto branco. */
 }
 
 .vagas-categories {
@@ -2280,14 +2309,222 @@ textarea:focus {
 .vagas-categories li a {
   color: #cad5e5;
   text-decoration: none;
-  transition: color 0.3s; /* Suaviza a mudança de cor */
+  transition: color 0.3s;
+  /* Suaviza a mudança de cor */
 }
 
 .vagas-categories li a:hover {
-  color: white; /* Altera a cor quando o mouse passa por cima */
+  color: white;
+  /* Altera a cor quando o mouse passa por cima */
   text-decoration: underline;
 }
 
-.container-vagas{
+.container-vagas {
+  background-color: #31466d;
+}
+
+
+/*================================== PREMIUM BOX ================================================*/
+.premium-box {
+  background-color: #04041b;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.8);
+}
+
+.premium-box .btn {
+  margin-top: 15px;
+  padding: 10px 20px;
   background-color: #cad5e5;
+  color: #000;
+  font-weight: 550;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.premium-box .btn:hover {
+  background-color: #31466d;
+  color: #cad5e5;
+}
+
+.plan-column {
+  align-items: center;
+  background-color: #cad5e5;
+  padding: 20px;
+  border-radius: 5px;
+  margin: 10px 0;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.plan-column h3 {
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.plan-column ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.plan-column li {
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+}
+
+.btn-business,
+.btn-business {
+  display: block;
+  width: 100%;
+  text-align: center;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  margin-top: 20px;
+  color: #FFF;
+}
+
+.btn-business {
+  background-color: #3498db !important;
+  /* Cor azul para empresas */
+}
+
+.btn-user {
+  background-color: #e74c3c !important;
+  /* Cor vermelha para usuários */
+}
+
+.btn-business:hover,
+.btn-user:hover {
+  opacity: 0.9;
+}
+
+.modal-dialog {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  /* Ajuste conforme necessário */
+  width: 100vw;
+  /* Ajuste conforme necessário */
+}
+
+.modal-content {
+  /* Estilos do seu conteúdo, como largura, altura, background, etc. */
+}
+
+.modal-header {
+  background-color: #cad5e5;
+}
+
+.modal-header h5 {
+  color: #04041b;
+}
+
+.modal-body {
+  background-color: #cad5e5;
+}
+
+
+
+
+/* HOMEPAGE PREMIUM*/
+
+.premium-section {
+  text-align: center;
+  padding: 50px 0;
+  background-color: #31466d;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+.plans-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.plan {
+  flex: 1;
+  max-width: 45%;
+  /* Máximo de largura para que ambos caibam na linha */
+  margin: 20px;
+  padding: 20px;
+  border: 1px solid #000;
+  border-radius: 10px;
+}
+
+.business {
+  background-color: #cad5e5;
+  /* Cor para o plano Business */
+
+}
+
+.business h3,
+.business p {
+  color: #000;
+}
+
+.professional {
+  background-color: #04041b;
+  /* Cor para o plano Professional */
+}
+
+.professional li,
+.professional p {
+  color: #fff;
+}
+
+.professional .price {
+  color: #fff;
+  font-weight: 600;
+}
+
+.plan h3 {
+  margin-top: 0;
+}
+
+
+.plan p {
+  font-size: 1em;
+  margin: 5px 0;
+}
+
+.plan ul {
+  padding: 0;
+  list-style-type: none;
+}
+
+.plan li {
+  margin-bottom: 5px;
+}
+
+.business button {
+  background-color: #04041b;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.business button:hover {
+  background-color: #31466d;
+
+}
+
+.professional button {
+  background-color: #cad5e5;
+  color: #000;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.professional button:hover {
+  background-color: #31466d;
 }
